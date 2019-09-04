@@ -14,7 +14,7 @@ internal final class ComponentsViewController: UIViewController {
     internal init() {
         super.init(nibName: nil, bundle: nil)
         
-        navigationItem.title = "Components"
+        navigationItem.title = "Checkout"
     }
     
     internal required init?(coder aDecoder: NSCoder) {
@@ -33,10 +33,10 @@ internal final class ComponentsViewController: UIViewController {
         super.viewDidLoad()
         
         componentsView.items = [
-            ComponentsItem(title: "Drop In", selectionHandler: presentDropInComponent),
-            ComponentsItem(title: "Card", selectionHandler: presentCardComponent),
-            ComponentsItem(title: "iDEAL", selectionHandler: presentIdealComponent),
-            ComponentsItem(title: "SEPA Direct Debit", selectionHandler: presentSEPADirectDebitComponent)
+            ComponentsItem(title: "Pop Up - Payment Options", selectionHandler: presentDropInComponent),
+            ComponentsItem(title: "Directly to Card", selectionHandler: presentCardComponent)
+//            ComponentsItem(title: "iDEAL", selectionHandler: presentIdealComponent),
+//            ComponentsItem(title: "SEPA Direct Debit", selectionHandler: presentSEPADirectDebitComponent)
         ]
         
         requestPaymentMethods()

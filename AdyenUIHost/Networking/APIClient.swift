@@ -18,7 +18,7 @@ internal final class APIClient {
     }
     
     internal func perform<R: Request>(_ request: R, completionHandler: @escaping CompletionHandler<R.ResponseType>) {
-        let url = environment.url.appendingPathComponent(request.path)
+        let url =  environment.url.appendingPathComponent(request.path)
         let body: Data
         do {
             body = try Coder.encode(request)
@@ -37,7 +37,7 @@ internal final class APIClient {
         
         urlRequest.allHTTPHeaderFields = [
             "Content-Type": "application/json",
-            "x-demo-server-api-key": Configuration.demoServerAPIKey
+            "x-api-key": "AQElhmfuXNWTK0Qc+iSTgGE8ovaaG9oeKkP5nTSxfbT8nf+8Tc3RsRDBXVsNvuR83LVYjEgiTGAH-OMfqeZ6EZEqYHqgatjO73ZbzE8ogufQn9LqcF12G1r4=-22IJ22JQ2g8e9ku8 "//Configuration.demoServerAPIKey
         ]
         
         requestCounter += 1

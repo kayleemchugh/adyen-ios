@@ -21,13 +21,15 @@ internal struct Configuration {
     
     static let shopperReference = "iOS Checkout Shopper"
     
+    static let merchantAccount = "Credera313ECOM"
+    
     static let shopperEmail = "checkoutshopperios@example.org"
     
     static let additionalData = ["allow3DS2": true]
     
     static let cardPublicKey = "{YOUR_CARD_PUBLIC_KEY}"
     
-    static let demoServerAPIKey = "{YOUR_DEMO_SERVER_API_KEY}"
+    static let demoServerAPIKey = "0101398667EE5CD5932B441CFA249380613CA2F69A1BDA1E40874F4B711BE56AAE9A63599F942743E342291A8F66773CEEC3F07283EF40590455672610C15D5B0DBEE47CDCB5588C48224C6007"
     
     static let applePayMerchantIdentifier = "{YOUR_APPLE_PAY_MERCHANT_IDENTIFIER}"
     
